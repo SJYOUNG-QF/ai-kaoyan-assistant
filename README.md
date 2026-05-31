@@ -262,16 +262,15 @@ curl -X POST http://localhost:8000/api/chat/ask \
 | POST | `/api/chat/ask` | 向 AI 提问（支持测试模式） |
 
 ## 页面截图
+## 页面截图
 
 | 首页 | 问答界面 |
-|------|----------|
-| ![首页](docs/screenshots/home.png) | ![问答](docs/screenshots/chat.png) |
+|------|---------|
+| <img src="docs/screenshots/home.png" width="400"> | <img src="docs/screenshots/chat.png" width="400"> |
 
 | 资料上传 | AI 回答 |
-|----------|---------|
-| ![上传](docs/screenshots/upload.png) | ![回答](docs/screenshots/answer.png) |
-
-> 截图存放路径：`docs/screenshots/`，部署后替换为实际截图即可。
+|---------|---------|
+| <img src="docs/screenshots/upload.png" width="400"> | <img src="docs/screenshots/answer.png" width="400"> |
 
 ## 后续优化方向
 
