@@ -262,15 +262,14 @@ curl -X POST http://localhost:8000/api/chat/ask \
 | POST | `/api/chat/ask` | 向 AI 提问（支持测试模式） |
 
 ## 页面截图
-## 页面截图
 
 | 首页 | 问答界面 |
 |------|---------|
-| <img src="docs/screenshots/home.png" width="400"> | <img src="docs/screenshots/chat.png" width="400"> |
+| <img src="https://raw.githubusercontent.com/SJYOUNG-QF/ai-kaoyan-assistant/main/docs/screenshots/home.png" width="400"> | <img src="https://raw.githubusercontent.com/SJYOUNG-QF/ai-kaoyan-assistant/main/docs/screenshots/chat.png" width="400"> |
 
 | 资料上传 | AI 回答 |
 |---------|---------|
-| <img src="docs/screenshots/upload.png" width="400"> | <img src="docs/screenshots/answer.png" width="400"> |
+| <img src="https://raw.githubusercontent.com/SJYOUNG-QF/ai-kaoyan-assistant/main/docs/screenshots/upload.png" width="400"> | <img src="https://raw.githubusercontent.com/SJYOUNG-QF/ai-kaoyan-assistant/main/docs/screenshots/answer.png" width="400"> |
 
 ## 后续优化方向
 
