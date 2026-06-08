@@ -19,7 +19,7 @@
 https://ai-kaoyan-assistant.vercel.app
 ## 项目演示
 
-![项目演示](docs/screenshots/upload.png)
+![PDF上传及AI问答示例](docs/screenshots/upload.png)
 
 ## 技术亮点
 
@@ -36,6 +36,12 @@ https://ai-kaoyan-assistant.vercel.app
 Next.js + Vercel
 FastAPI + Railway
 
+### 技术栈
+- **前端**：Next.js + TypeScript + Tailwind CSS
+- **后端**：FastAPI + Python
+- **AI / RAG**：ChromaDB + DeepSeek + PyPDF2
+- **部署**：Vercel + Railway
+
 ## 我的贡献
 
 项目独立开发完成：
@@ -47,3 +53,5 @@ FastAPI + Railway
 - DeepSeek接入
 - SSE流式输出
 - 云端部署
+- 
+> 项目完整覆盖 PDF 解析 → 向量知识库 → RAG 问答 → 流式输出 → 前后端部署的全链路，实现了可在线体验的考研 AI 助手。
