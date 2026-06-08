@@ -38,19 +38,22 @@
 ---
 
 ## 技术架构
-
 ```mermaid
 graph TD
-    A[用户浏览器 / Next.js (Vercel)] -->|HTTPS| B[FastAPI (Railway)]
-    B --> C[PyPDF2 解析文本]
+    A[ 用户浏览器 / Next.js (Vercel)] -- "HTTPS" --> B[⚙️ FastAPI (Railway)]
+    
+    subgraph 后端处理流程
+    B --> C[PyPDF2 解析 PDF 文本]
     B --> D[ChromaDB 向量检索]
     B --> E[DeepSeek API 推理]
-    C --> F[构建知识库]
-    D --> G[检索 Top-3 文档]
-    E --> H[流式/最终回答]
+    end
+    
+    C --> F[构建向量知识库]
     F --> D
+    D --> G[检索 Top-3 文档]
     G --> E
-
+    E --> H[流式/JSON 响应返回前端]
+    H --> A
 ---
 
 ## 技术栈
