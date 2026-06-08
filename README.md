@@ -6,7 +6,7 @@
 
 ### 在线体验
 
-https://ai-kaoyan-assistant.vercel.app
+[ai-kaoyan-assistant.vercel.app](https://ai-kaoyan-assistant.vercel.app)
 
 ---
 
@@ -14,15 +14,19 @@ https://ai-kaoyan-assistant.vercel.app
 
 ### 首页
 
-![首页](文档截图/home.png)
+![首页](docs/screenshots/home.png)
 
-### PDF 上传
+### PDF 上传成功页面
 
-![上传](文档截图/upload.png)
+![上传](docs/screenshots/upload.png)
 
-### AI 问答
+### 测试模式提问 & 回答页面
 
-![问答](文档截图/chat.png)
+![测试模式提问](docs/screenshots/chat.png)
+
+### 回答示例
+
+![回答示例](docs/screenshots/answer.png)
 
 ---
 
@@ -33,7 +37,7 @@ https://ai-kaoyan-assistant.vercel.app
 - 支持上传考研 PDF 教材与学习笔记
 - 使用 PyPDF2 自动解析文档内容
 - 基于 ChromaDB 构建向量知识库
-- 采用 Top-K 相似度检索获取上下文
+- Top-K 相似度检索获取上下文
 - 检索结果与用户问题共同发送给大模型生成回答
 
 解决了大模型无法理解用户私有学习资料的问题，降低幻觉回答概率。
@@ -42,7 +46,7 @@ https://ai-kaoyan-assistant.vercel.app
 
 ### ⚡ 流式对话体验
 
-- 基于 FastAPI + SSE 实现流式响应
+- FastAPI + SSE 实现流式响应
 - AI 回答实时返回
 - 接近 ChatGPT 的交互体验
 
@@ -141,9 +145,7 @@ https://ai-kaoyan-assistant.vercel.app
 
 ## 我的工作
 
-项目由本人独立开发完成。
-
-负责内容包括：
+项目由本人独立开发完成，负责：
 
 - 系统整体架构设计
 - 前后端开发
@@ -162,7 +164,7 @@ https://ai-kaoyan-assistant.vercel.app
 
 直接将用户问题发送给大模型时，经常出现脱离资料内容的回答。
 
-#### 解决方案
+**解决方案：**
 
 - 引入 RAG 检索增强生成架构
 - 优先从知识库检索相关内容
@@ -176,7 +178,7 @@ https://ai-kaoyan-assistant.vercel.app
 
 不同教材、讲义和笔记格式差异较大。
 
-#### 解决方案
+**解决方案：**
 
 - 增加文本清洗流程
 - 去除页码和无效字符
@@ -190,7 +192,7 @@ https://ai-kaoyan-assistant.vercel.app
 
 传统请求需要等待完整结果生成后返回。
 
-#### 解决方案
+**解决方案：**
 
 - 使用 FastAPI + SSE
 - 实现流式输出
@@ -236,13 +238,4 @@ npm run dev
 
 ## 项目价值
 
-该项目完整实现了：
-
-- PDF 文档解析
-- 向量数据库构建
-- RAG 检索增强生成
-- LLM API 调用
-- SSE 流式输出
-- 前后端分离部署
-
-覆盖了当前 AI 应用开发中的核心技术链路，可作为 RAG 应用开发实践项目。
+完整覆盖 PDF 文档解析 → 向量数据库构建 → RAG 检索增强生成 → LLM 调用 → SSE 流式输出 → 前后端分离部署的全链路，实现了可在线体验的考研 AI 助手。
