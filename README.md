@@ -19,7 +19,7 @@
 https://ai-kaoyan-assistant.vercel.app
 ## 项目演示
 
-![项目演示](docs/screenshots/chat.png)
+![项目演示](docs/screenshots/upload.png)
 
 ## 技术亮点
 
